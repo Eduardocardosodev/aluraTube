@@ -1,4 +1,7 @@
+import { useState } from 'react';
+import ReactSwitch from 'react-switch';
 import styled from 'styled-components';
+import Search from './components/Search';
 
 const StyledMenu = styled.header`
   display: flex;
@@ -22,14 +25,31 @@ const StyledMenu = styled.header`
       fill: ${({ theme }) => theme.textColorBase || '#222222'};
     }
   }
+
+  #dark {
+    background-color: black;
+    color: green;
+  }
+
+  #light {
+    background-color: green;
+  }
 `;
 
-export default function Menu() {
+export default function Menu({ valoDoFiltro, setValoDoFiltro }) {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    setTheme((current) => (current === 'light' ? 'dark' : 'light'));
+  };
+
   return (
     <StyledMenu>
       <div>
         <Logo />
       </div>
+      <Search valoDoFiltro={valoDoFiltro} setValoDoFiltro={setValoDoFiltro} />
+      <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'} />
     </StyledMenu>
   );
 }

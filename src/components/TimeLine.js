@@ -42,4 +42,16 @@ export const StyledTimeline = styled.div`
       }
     }
   }
+
+  .favorites {
+    img {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      max-width: 100%;
+    }
+    span {
+      text-align: left;
+    }
+  }
 `;

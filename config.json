@@ -1,8 +1,23 @@
 {
   "name": "Eduardo Cardoso",
   "job": "Lead Software Engineer",
+  "bg": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
   "github": "Eduardocardosodev",
   "banner": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffavpng.com%2Fpng_view%2Fyoutube-youtube-template-banner-graphic-design-png%2F1EwarfLS&psig=AOvVaw12oiyzkNraKwbraBSWXaC8&ust=1667943255790000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCvovyCnfsCFQAAAAAdAAAAABAS",
+  "favorites": {
+    "AluraTuber Favoritos": [
+      {
+        "thumb": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s88-c-k-c0x00ffffff-no-rj",
+        "title": "@omariosouto",
+        "url": "https://www.youtube.com/c/DevSoutinho"
+      },
+      {
+        "thumb": "https://yt3.ggpht.com/ytc/AMLnZu9fwc9E-G17B2vMnbYzZBp_NYs4AmCE802y8x08=s88-c-k-c0x00ffffff-no-rj",
+        "title": "@felipeDeschamps",
+        "url": "https://www.youtube.com/c/FilipeDeschamps"
+      }
+    ]
+  },
   "playlists": {
     "jogos": [
       {
@@ -153,12 +168,6 @@
         "title": "O que é o C#? #HipstersPontoTube",
         "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
         "thumb": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
-      }
-    ],
-    "AluraTubes favoritos": [
-      {
-        "thumb": "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s88-c-k-c0x00ffffff-no-rj",
-        "title": "@omariosouto"
       }
     ]
   }
