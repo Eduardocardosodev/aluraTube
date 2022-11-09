@@ -1,6 +1,5 @@
 import config from '../config.json';
 import styled from 'styled-components';
-import { CSSReset } from '../src/components/CSSReset';
 import Menu from '../src/components/Menu/Menu';
 import { StyledTimeline } from '../src/components/TimeLine';
 import { useState } from 'react';
@@ -10,7 +9,6 @@ function HomePage() {
 
   return (
     <>
-      <CSSReset />
       <div
         style={{
           display: 'flex',
@@ -32,6 +30,8 @@ function HomePage() {
 
 export default HomePage;
 const StyledHeader = styled.div`
+  background-color: ${({ theme }) => theme.backgroundLevel1};
+
   img {
     width: 80px;
     height: 80px;
@@ -102,18 +102,17 @@ function TimeLine({ searchValue, ...props }) {
         favorites.map((favoritesProfile) => {
           const profiles = props.favorites[favoritesProfile];
           return (
-            <section key={favoritesProfile} className="favorites">
+            <div key={favoritesProfile} className="favorites">
               <h2>{favoritesProfile}</h2>
               <div>
                 {profiles &&
                   profiles.map((profile) => (
-                    <a href={profile.url}>
+                    <a href={profile.url} className="favorites-profiles">
                       <img src={profile.thumb} alt={profile.name} />
-                      <span>{profile.title}</span>
                     </a>
                   ))}
               </div>
-            </section>
+            </div>
           );
         })}
     </StyledTimeline>

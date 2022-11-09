@@ -44,14 +44,17 @@ export const StyledTimeline = styled.div`
   }
 
   .favorites {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
     img {
       border-radius: 50%;
       height: 100px;
       width: 100px;
       max-width: 100%;
     }
-    span {
-      text-align: left;
-    }
+  }
+  .favorites-profiles {
+    margin-right: 50px;
   }
 `;

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ReactSwitch from 'react-switch';
 import styled from 'styled-components';
+import DarkModeSwitch from './components/DarkModeSwitch';
 import Search from './components/Search';
 
 const StyledMenu = styled.header`
@@ -49,7 +50,7 @@ export default function Menu({ valoDoFiltro, setValoDoFiltro }) {
         <Logo />
       </div>
       <Search valoDoFiltro={valoDoFiltro} setValoDoFiltro={setValoDoFiltro} />
-      <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'} />
+      <DarkModeSwitch />
     </StyledMenu>
   );
 }
